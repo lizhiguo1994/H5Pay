@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://192.168.2.209:8085/H5Pay/Pay" method="post" onsubmit="return beforeSubmit()">
+        ID：<input id="username" type="text" name="username" />
+        Password：<input id="password" type="password" name="password" />
+        <input type="submit" value="Submit" />
+    </form>
+    <script type="text/javascript">
+        function beforeSubmit() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username.length < 6 || password.length < 6) {
+                alert('格式不正确！');
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

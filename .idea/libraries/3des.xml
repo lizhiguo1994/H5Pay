@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="3des">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/3des.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

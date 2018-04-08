@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+  <display-name></display-name>
+
+  <!-- H5支付 -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Pay</servlet-name>
+    <servlet-class>Pay</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Pay</servlet-name>
+    <url-pattern>/Pay</url-pattern>
+  </servlet-mapping>
+
+  <!-- 接收异步通知 -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReceiveNotify</servlet-name>
+    <servlet-class>ReceiveNotify</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceiveNotify</servlet-name>
+    <url-pattern>/ReceiveNotify</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TT</servlet-name>
+    <servlet-class>TT</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TT</servlet-name>
+    <url-pattern>/TT</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SubmitOrder</servlet-name>
+    <servlet-class>SubmitOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubmitOrder</servlet-name>
+    <url-pattern>/SubmitOrder</url-pattern>
+  </servlet-mapping>
+
+
+
+
+</web-app>
